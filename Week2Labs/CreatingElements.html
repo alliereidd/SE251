@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Week 2 Files: Changing Elements</title>
+        
+        <style type="text/css">
+            .border{border:1px solid black;}
+        </style>
+        
+    </head>
+    <body>
+    </body>
+    <script type="text/javascript">
+        
+        var actors =[
+            {first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+            {first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+            {first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+            {first:"Kevin", last:"McCallister", credit:"Home Alone" },
+            {first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+            {first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+            {first:"Marion", last:"Cobretti", credit:"Cobra" }
+        ]
+        
+        var body = document.querySelector("body")
+        
+        for(var row = 0; row < actors.length; row++) {
+            var tempDiv = document.createElement("div");
+            tempDiv.setAttribute("class", "border");
+            
+            for(column in actors[row]) {
+                var newDiv = document.createElement("p");
+                var txtValue = document.createTextNode(actors[row][column]);
+                newDiv.appendChild(txtValue);
+                tempDiv.appendChild(newDiv);
+            }
+            
+            
+            body.appendChild(tempDiv);
+        
+        }
+    
+    
+</script>
+
+</html>

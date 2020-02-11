@@ -1,0 +1,66 @@
+.main { 
+    margin-top:50px;
+    text-align: center;
+}
+
+#weekHeader {
+    margin-left:380px; 
+    margin-top:50px; 
+    clear: left; 
+    margin-bottom: 10px; 
+    border: 1px red; 
+    height: 40px;
+    text-align: center;
+}
+
+.Red {background-color:red;}
+.Green {background-color:green;}
+.Grey {background-color:grey;}
+
+.day  { 
+    margin-bottom: 4px; 
+    height: 50px; 
+    width: 100px; 
+    border: 1px solid; 
+    float: left; 
+    margin-left:5px;
+    text-align: center; 
+    vertical-align: middle; 
+    line-height: 50px;
+}
+
+.row {
+    clear: left; 
+    margin-top:4px;
+}
+
+.dayHeader {
+    height: 30px; 
+    width: 100px; 
+    border: 1px solid; 
+    float: left;
+    margin-left:5px; 
+    font-weight: bold;
+}
+
+#results {
+    clear: both;
+    margin-left:375px; 
+    height: 250px;
+    text-align: center;
+}
+
+input[type=button] {
+    width: 200px; 
+    height: 40px;
+}
+
+.footer-btn {
+    clear: both; 
+    margin-top:20px; 
+    margin-left:500px; 
+    height:150px; 
+    border: 1px red; 
+    width: 500px;
+    text-align: center;
+}

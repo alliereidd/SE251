@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+    <h1>Using For Loops</h1>
+    <p>Allison Reid</p>
+</body>
+    
+    <script>
+        
+        myArray = new Array();
+        for(i = 1; i < 101; i++) {
+            if(i%2 == 0 && i%3 == 0) {
+                myObject = {index: i, label: "Fizz Buzz"};
+            } else if(i%2 == 0) {
+                myObject = {index: i, label: "Fizz"};
+            } else if(i%3 == 0) {
+                myObject = {index: i, label: "Buzz"};
+            } else {
+                myObject = {index: i, label: "Undefined"};
+            }
+            myArray.push(myObject)
+            for(value in myObject) {
+                console.log(myObject[value]);
+            }
+        }
+        
+</script>
+        
+
+</html>
